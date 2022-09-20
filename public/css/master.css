@@ -1,3 +1,76 @@
-header {
-    color: #4a5568;
+/* -=-=-=-=-=- FONTS -=-=-=-=-=- */
+@font-face {
+    font-family: 'Sen-Regular';
+    src: url("../assets/fonts/Sen-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Sen-Bold';
+    src: url("../assets/fonts/Sen-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Sen-ExtraBold';
+    src: url("../assets/fonts/Sen-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url("../assets/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url("../assets/fonts/Quicksand-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Quicksand-Light';
+    src: url("../assets/fonts/Quicksand-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url("../assets/fonts/Quicksand-Medium.ttf");
+}
+
+/* -=-=-=-=-=- GENERAL -=-=-=-=-=- */
+body {
+    font-size: 3vw;
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        font-size: 2.8vw
+    }
+}
+
+/* -=-=-=-=-=- FOOTER -=-=-=-=-=- */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 7em;
+    background-color: #4C8076;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: 'Quicksand-Regular', sans-serif;
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin: .5em 0;
+}
+
+.footer-content__social > svg {
+    height: 1.2em;
+    width: auto;
+    margin-right: .5em;
+    fill: #fff;
 }
