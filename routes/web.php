@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\MasterController;
+use App\Http\Controllers\WorkController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function ()
-    {
-        return view('home');
-    });
+Route::get('/', [MasterController::class, 'showHome']);
+Route::get('/mijn-werk', [WorkController::class, 'showWork']);
 

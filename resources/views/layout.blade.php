@@ -4,12 +4,43 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>@yield('title')</title>
-        <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/master.css') }}">
-        @yield('page-stylesheet')
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/master.css">
+        <link rel="stylesheet" href="/css/{{ $active }}.css">
     </head>
     <body>
-        @yield('header')
+        <div class="nav-menu" id="menu">
+            <a class="nav-menu__nav-item" href="{{ url('/') }}">Home</a>
+            <a class="nav-menu__nav-item" href="">Over mij</a>
+            <a class="nav-menu__nav-item" href="{{ url('/mijn-werk') }}">Mijn werk</a>
+            <a class="nav-menu__nav-item" href="">Contact</a>
+        </div>
+        @hasSection('header')
+            @yield('header')
+        @endif
+        @sectionMissing('header')
+            <header class="master-header">
+                <h2 class="master-header__subtitle">Jochem de Wit - Porfolio website</h2>
+                <div class="master-header__master-bar">
+                    <h1 class="master-bar__title">{{ $title }}</h1>
+                    <div class="master-bar__master-nav">
+                        <div class="hamburger-menu" id="nav">
+                            <svg class="ham hamRotate ham" id="navIcon" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
+                                <path
+                                    class="line top"
+                                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                <path
+                                    class="line middle"
+                                    d="m 30,50 h 40" />
+                                <path
+                                    class="line bottom"
+                                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        @endif
         @yield('main')
         <footer class="footer">
             <div class="footer__footer-content">
@@ -28,5 +59,7 @@
             </div>
         </footer>
     </body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/nav.js') }}"></script>
 </html>
 

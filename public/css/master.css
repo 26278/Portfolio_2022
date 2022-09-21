@@ -39,13 +39,165 @@ body {
     font-size: 3vw;
 }
 
-@media screen and (min-width: 750px) {
-    body {
-        font-size: 2.8vw
+.orange-button {
+    font-family: 'Sen-ExtraBold', sans-serif;
+    color: #fff;
+    padding: .8em 1.2em;
+    background-color: #FF6600;
+    border-radius: 999px;
+    transition: .3s ease;
+    border: 3px solid #FF6600;
+    box-sizing: border-box;
+}
+
+.orange-button:hover {
+    background-color: #fff;
+    color: #FF6600;
+    border: 3px solid #FF6600;
+    cursor: pointer;
+}
+
+/* -=-=-=-=-=- RESPONSIVE FONTS -=-=-=-=-=- */
+@media screen and (min-width: 550px) {
+    body, .nav-menu {
+        font-size: 2.8vw;
     }
 }
 
-/* -=-=-=-=-=- FOOTER -=-=-=-=-=- */
+@media screen and (min-width: 770px) {
+    body, .nav-menu {
+        font-size: 2.6vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body, .nav-menu {
+        font-size: 14px;
+        min-height: 100vh;
+    }
+}
+
+/* -=-=-=-=-=- MASTER HEADER -=-=-=-=-=- */
+.master-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.master-header__subtitle {
+    position: relative;
+    padding: 1.66em 10%;
+    align-self: flex-end;
+    font-family: 'Sen-Regular', sans-serif;
+}
+
+.master-header__master-bar {
+    position: relative;
+    width: 100%;
+    height: 4.32em;
+    background-color: #4C8076;
+    padding: 0 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.master-bar__title {
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    font-family: 'Sen-Bold', sans-serif;
+}
+
+.master-bar__master-nav {
+    transform: translateX(1em);
+    z-index: 102;
+}
+
+/* -=-=-=-=-=- NAVIGATION -=-=-=-=-=- */
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 300ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width: 4.5;
+    stroke-linecap: round;
+}
+
+.ham .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+.nav-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #4C8076;
+    z-index: 101;
+    padding: 5em 10% 0 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 2em;
+}
+
+@media screen and (min-width: 500px) {
+    .nav-menu {
+        font-size: 1.5em;
+    }
+}
+
+.nav-menu__nav-item {
+    font-family: 'Sen-Bold', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 0;
+    transition: .3s ease;
+}
+
+.nav-menu__nav-item:hover {
+    color: #C4FCF0;
+}
+
+/* -=-=-=-=-=- MASTER FOOTER -=-=-=-=-=- */
 .footer {
     position: relative;
     width: 100%;
