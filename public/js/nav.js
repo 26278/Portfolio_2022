@@ -11,13 +11,11 @@ navAni.to('.ham', .3, { top: '1em', right: '2.85em', left: 'unset' }, '-=.3');
 function openNav() {
     navOpen = true;
     window.scrollTo(0, 0);
-    console.log('Nav gaat open');
     navAni.play();
 }
 
 function closeNav() {
     navOpen = false;
-    console.log('Nav gaat dicht');
     navAni.reverse();
 }
 

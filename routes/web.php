@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MasterController::class, 'showHome']);
+Route::get('/over-mij', [MasterController::class, 'showOverMij']);
 Route::get('/mijn-werk', [WorkController::class, 'showWork']);
 

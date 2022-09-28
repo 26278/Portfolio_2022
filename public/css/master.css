@@ -35,43 +35,59 @@
 }
 
 /* -=-=-=-=-=- GENERAL -=-=-=-=-=- */
-body {
+body, .nav-menu, .modal-back__modal-box > *, article {
     font-size: 3vw;
 }
 
-.orange-button {
+.button {
     font-family: 'Sen-ExtraBold', sans-serif;
     color: #fff;
     padding: .8em 1.2em;
-    background-color: #FF6600;
     border-radius: 999px;
     transition: .3s ease;
-    border: 3px solid #FF6600;
     box-sizing: border-box;
 }
 
-.orange-button:hover {
+.button:hover {
     background-color: #fff;
-    color: #FF6600;
-    border: 3px solid #FF6600;
     cursor: pointer;
+}
+
+.orange {
+    border: 3px solid #FF6600;
+    background-color: #FF6600;
+}
+
+.orange:hover {
+    border: 3px solid #FF6600;
+    color: #FF6600;
+}
+
+.dark-green {
+    border: 3px solid #005246;
+    background-color: #005246;
+}
+
+.dark-green:hover {
+    border: 3px solid #005246;
+    color: #005246;
 }
 
 /* -=-=-=-=-=- RESPONSIVE FONTS -=-=-=-=-=- */
 @media screen and (min-width: 550px) {
-    body, .nav-menu {
+    body > *, .nav-menu, .modal-back__modal-box > *, article {
         font-size: 2.8vw;
     }
 }
 
 @media screen and (min-width: 770px) {
-    body, .nav-menu {
+    body, .nav-menu, .modal-back__modal-box > *, article {
         font-size: 2.6vw;
     }
 }
 
 @media screen and (min-width: 900px) {
-    body, .nav-menu {
+    body, .nav-menu, .modal-back__modal-box > *, article {
         font-size: 14px;
         min-height: 100vh;
     }

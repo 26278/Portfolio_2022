@@ -51,7 +51,7 @@
                 nieuwe uitdaging.
             </p>
             <p class="intro-container__read-more" onclick="location.href='{{ url('/over-mij') }}'">Lees meer...</p>
-            <p class="intro-container__portfolio orange-button" onclick="location.href='{{ url('/mijn-werk') }}'">Bekijk mijn werk</p>
+            <p class="intro-container__portfolio button orange" onclick="location.href='{{ url('/mijn-werk') }}'">Bekijk mijn werk</p>
             <div class="intro-container__rectangle"></div>
         </div>
     </main>

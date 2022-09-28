@@ -11,7 +11,7 @@
     <body>
         <div class="nav-menu" id="menu">
             <a class="nav-menu__nav-item" href="{{ url('/') }}">Home</a>
-            <a class="nav-menu__nav-item" href="">Over mij</a>
+            <a class="nav-menu__nav-item" href="{{ url('/over-mij') }}">Over mij</a>
             <a class="nav-menu__nav-item" href="{{ url('/mijn-werk') }}">Mijn werk</a>
             <a class="nav-menu__nav-item" href="">Contact</a>
         </div>
@@ -61,5 +61,6 @@
     </body>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/nav.js') }}"></script>
+    @yield('js')
 </html>
 
