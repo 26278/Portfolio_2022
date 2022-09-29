@@ -25,4 +25,12 @@ class MasterController
 
         return view('over-mij', ['title' => $title, 'active' => $active]);
     }
+
+    public function showContact()
+    {
+        $title  = "Contact";
+        $active = self::getLowCompressedString($title);
+
+        return view('contact', ['title' => $title, 'active' => $active]);
+    }
 }

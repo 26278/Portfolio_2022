@@ -46,7 +46,7 @@
             <span>Enthousiasme en motivatie zorgen ervoor dat ik elke dag nieuwe vaardigheden onder de knie krijg op het
                 gebied van backend development.</span>
                 <br><br>
-                Na het afronden van de MBO 4: Media & Applicatie ontwikkelaar en het behalen van mijn propedeuse voor HBO
+                Na het afronden van de mbo 4: Media & Applicatie ontwikkelaar en het behalen van mijn propedeuse voor hbo
                 Informatica streef ik ernaar om zelfstandiger software te kunnen ontwikkelen en ben ik op zoek naar een
                 nieuwe uitdaging.
             </p>

@@ -19,7 +19,7 @@
         </article>
 
         <article class="main__am-properties">
-            <h2 class="am-properties__title am-title">Mijn eigenschappen - Soft skills</h2>
+            <h2 class="am-properties__title am-title">Soft skills: eigenschappen</h2>
             <figure class="am-properties__pr-figure">
                 <img src="/assets/images/wordcloud.png" alt="Wordcloud met eigenschappen" class="pr-figure__img">
                 <p class="pr-figure__desc">
@@ -27,7 +27,7 @@
                 </p>
             </figure>
             <p class="am-intro__text am-text">
-                Afgelopen jaar heb ik op het HBO veel reflectie verslagen geschreven over mijn prestaties bij
+                Afgelopen jaar heb ik op het hbo veel reflectie verslagen geschreven over mijn prestaties bij
                 verschillende projecten. Hierbij heb ik veel feedback gekregen van medestudenten, docenten en
                 opdrachtgevers. De eigenschappen die het meeste voorkomen heb ik in een wordcloud gestopt. Zoals
                 iedereen heb ik niet alleen positieve eigenschappen maar staan er ook verbeterpunten in de wordcloud,
@@ -46,12 +46,12 @@
         </article>
 
         <article class="main__am-knowledge">
-            <h2 class="am-knowledge__title am-title">Mijn eigenschappen - Kennis</h2>
+            <h2 class="am-knowledge__title am-title">Hard skills: kennis</h2>
             <p class="am-knowledge--text am-text">
                 Inmiddels ben ik 4 jaar aan het programmeren en heb ik kennis opgedaan van verschillende
-                programmeertalen en frameworks tijdens de opleiding MBO media & applicatie ontwikkelaar en HBO
+                programmeertalen en frameworks tijdens de opleiding mbo media & applicatie ontwikkelaar en hbo
                 informatica. Ook heb ik stage gelopen bij een front-end bedrijf en een back-end bedrijf en heb ik een
-                half jaar een bijbaan gehad naast mijn HBO als creative front-end developer. <br>
+                half jaar een bijbaan gehad naast mijn hbo als creative front-end developer. <br>
                 <a class="am-text__link" href="{{ url('/mijn-werk') }}">Lees meer over mijn werkervaringen…</a>
                 <br><br>
                 Hieronder staan de programmeertalen waarmee ik heb gewerkt.
@@ -131,7 +131,7 @@
             </p>
             <h3 class="am-subtitle am-expertise__subtitle">Cybersecurity & Forensisch ICT</h3>
             <p class="am-text">
-                Op het MBO en HBO heb ik ook les gekregen in cybersecurity en forensisch ICT. Encrypties, speuren en
+                Op het mbo en hbo heb ik ook les gekregen in cybersecurity en forensisch ICT. Encrypties, speuren en
                 filteren door images van harde schijven op zoek naar bewijsmateriaal en dus ook leren hoe je het beste
                 materiaal kan verbergen geeft mij een kick, alleen vond ik het documenteren minder interessant en helaas
                 ging daar de meeste tijd in zitten.

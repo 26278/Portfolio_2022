@@ -13,7 +13,7 @@
             <a class="nav-menu__nav-item" href="{{ url('/') }}">Home</a>
             <a class="nav-menu__nav-item" href="{{ url('/over-mij') }}">Over mij</a>
             <a class="nav-menu__nav-item" href="{{ url('/mijn-werk') }}">Mijn werk</a>
-            <a class="nav-menu__nav-item" href="">Contact</a>
+            <a class="nav-menu__nav-item" href="{{ url('/contact') }}">Contact</a>
         </div>
         @hasSection('header')
             @yield('header')

@@ -35,8 +35,8 @@
 }
 
 /* -=-=-=-=-=- GENERAL -=-=-=-=-=- */
-body, .nav-menu, .modal-back__modal-box > *, article {
-    font-size: 3vw;
+body > *, .nav-menu, .modal-back__modal-box > *, article {
+    font-size: clamp(8px, 3vw, 14px);
 }
 
 .button {
@@ -76,19 +76,18 @@ body, .nav-menu, .modal-back__modal-box > *, article {
 /* -=-=-=-=-=- RESPONSIVE FONTS -=-=-=-=-=- */
 @media screen and (min-width: 550px) {
     body > *, .nav-menu, .modal-back__modal-box > *, article {
-        font-size: 2.8vw;
+        font-size: clamp(8px, 2.8vw, 14px);
     }
 }
 
 @media screen and (min-width: 770px) {
     body, .nav-menu, .modal-back__modal-box > *, article {
-        font-size: 2.6vw;
+        font-size: clamp(8px, 2.6vw, 14px);
     }
 }
 
 @media screen and (min-width: 900px) {
     body, .nav-menu, .modal-back__modal-box > *, article {
-        font-size: 14px;
         min-height: 100vh;
     }
 }
