@@ -66,10 +66,6 @@
     flex-direction: row-reverse;
 }
 
-.work-experiences__work-experience:nth-of-type(even) > .work-experience__button {
-    align-self: flex-end;
-}
-
 .work-experience__we-header {
     position: relative;
     width: 100%;
@@ -240,3 +236,81 @@
     margin: 1em 10%;
     text-decoration: none;
 }
+
+@media screen and (min-width: 1200px) {
+    .work-main {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .work-main__article {
+        max-width: 1000px;
+        padding: 2em 0;
+    }
+
+    .work-main__article:first-of-type {
+        margin-top: 2em;
+    }
+
+    .work-main__article:nth-of-type(2) {
+        text-align: right;
+    }
+
+    .work-main__article:nth-of-type(2) > .article__header,
+    .work-main__article:nth-of-type(2) > .article__cta {
+        align-self: flex-end;
+    }
+
+    .work-main__header {
+        padding: 1.1em calc((100vw - 1000px) / 2);
+    }
+
+    .work-main__work-experiences {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 4em;
+    }
+
+    .work-experiences__work-experience {
+        width: 50%;
+    }
+
+    .work-experiences__work-experience:nth-of-type(even) {
+        background-color: unset;
+        text-align: left;
+        padding: 1.1em calc((100vw - 1000px) / 2) 1.1em 5%;
+    }
+
+    .work-experiences__work-experience:nth-of-type(odd) {
+        padding: 1.1em 5% 1.1em calc((100vw - 1000px) / 2);
+    }
+
+    .work-experiences__work-experience:nth-of-type(even) > .work-experience__we-header {
+        flex-direction: row;
+    }
+
+    .work-experiences__work-experience:nth-of-type(4n+2),
+    .work-experiences__work-experience:nth-of-type(4n+3) {
+        background-color: rgba(76, 128, 118, .3);
+    }
+
+    .work-experiences__work-experience:nth-of-type(4n+3) > .work-experience__we-header,
+    .work-experiences__work-experience:nth-of-type(4n+4) > .work-experience__we-header {
+        flex-direction: row-reverse;
+    }
+
+    .work-main__projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1em calc((100vw - 1000px) / 2);
+        margin-bottom: 4em;
+    }
+
+    .projects__project {
+        width: 48%;
+    }
+}
+
+
+

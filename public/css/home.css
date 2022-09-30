@@ -29,7 +29,7 @@ body {
     position: absolute;
     top: 6em;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 4em;
     background-color: #4C8076;
     z-index: 1;
@@ -69,7 +69,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 2em;
+    /*padding-bottom: 2em;*/
     box-sizing: border-box;
 }
 
@@ -186,10 +186,27 @@ body {
         width: 50%;
     }
 
+    .home-header__ham {
+        left: unset;
+        top: 6em;
+        right: 10%;
+        width: 2.5em;
+        height: 4em;
+        z-index: 102 !important;
+    }
+
+    .nav-menu > a:first-of-type {
+        margin-top: 1em;
+    }
+
     .home-main {
         width: 50%;
         min-height: calc(100vh - 7em);
-        background-color: rgba(172, 172, 182, .33);
+        background-color: #fff3e5;
+        background-image: url("/assets/images/it-pattern.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -208,6 +225,7 @@ body {
 
     .image-container__left-text {
         min-width: calc(50vw - (65vh / 7 * 5));
+        width: calc(5vw - 1em);
     }
 
     .image-container__img-gradient {
