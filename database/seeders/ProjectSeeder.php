@@ -59,7 +59,7 @@ Na de basisvaardigheden onder de knie te krijgen kreeg ik de opdracht om met dri
             'subtitle'   => 'Catalogs, magazine prints en social media posts',
             'image'      => 'superorange.jpg',
             'type'       => 'Graphic Design',
-            'main_text'  => 'Super Orange Skateboarding is een skateboard merk van Nederlandse bodem met Canadese roots. ',
+            'main_text'  => 'Super Orange Skateboarding is een skateboard merk van Nederlandse bodem met Canadese roots. Vanuit de skatewinkel kreeg ik de vraag of ik social media berichten kon ontwerpen voor promotie doeleinden van Super Orange en inmiddels maak ik flyers, stickers en catalogussen voor nieuwe oplagen van de skateboard decks.',
             'github'     => '',
             'extra_link' => '/super-orange',
         ]);
