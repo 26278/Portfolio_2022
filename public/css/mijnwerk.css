@@ -310,7 +310,15 @@
     .projects__project {
         width: 48%;
     }
+
+    .modal-back__modal-box {
+        max-width: 1000px;
+        left: calc((100vw - 1000px) / 2);
+    }
+
+    .modal-box__project-img {
+        max-width: 500px;
+        align-self: center;
+    }
 }
-
-
 

@@ -20,8 +20,9 @@ return new class extends Migration {
                 $table->string('subtitle');
                 $table->string('image');
                 $table->string('type');
-                $table->string('main_text');
+                $table->longText('main_text');
                 $table->string('github');
+                $table->string('extra_link');
             });
     }
 

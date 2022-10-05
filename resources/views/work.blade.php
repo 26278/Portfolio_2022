@@ -79,7 +79,11 @@
                     <img src="/assets/images/{{ $oProject->image }}" alt="{{$oProject->title}}" class="modal-box__project-img">
                     <p class="modal-box__project-desc">{{ $oProject->main_text }}</p>
                     @if($oProject->github)
-                        <a href="{{ $oProject->github }}" class="modal-box__github-link button orange">Bekijk op GitHub</a>@endif
+                        <a href="{{ $oProject->github }}" target="_blank" class="modal-box__github-link button orange">Bekijk op GitHub</a>
+                    @endif
+                    @if($oProject->extra_link)
+                        <a href="{{ $oProject->extra_link }}" target="_blank" class="modal-box__github-link button orange">Bekijk meer</a>
+                    @endif
                 </article>
             @endforeach
         </div>

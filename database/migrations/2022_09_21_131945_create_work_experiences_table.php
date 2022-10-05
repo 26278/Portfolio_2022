@@ -21,7 +21,7 @@ return new class extends Migration {
                 $table->string('title');
                 $table->boolean('employee');
                 $table->string('header_text');
-                $table->string('main_text');
+                $table->longText('main_text');
             });
     }
 

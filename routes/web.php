@@ -19,4 +19,4 @@ Route::get('/', [MasterController::class, 'showHome']);
 Route::get('/over-mij', [MasterController::class, 'showOverMij']);
 Route::get('/mijn-werk', [WorkController::class, 'showWork']);
 Route::get('/contact', [MasterController::class, 'showContact']);
-
+Route::get('/super-orange', [MasterController::class, 'showSuperOrange']);

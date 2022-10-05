@@ -33,4 +33,12 @@ class MasterController
 
         return view('contact', ['title' => $title, 'active' => $active]);
     }
+
+    public function showSuperOrange()
+    {
+        $title  = "Super Orange";
+        $active = self::getLowCompressedString($title);
+
+        return view('super-orange', ['title' => $title, 'active' => $active]);
+    }
 }
